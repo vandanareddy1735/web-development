@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Genesis</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo" id="logo">Genesis</div>
+            <ul>
+                <!-- Navigation links -->
+                <li><a href="#top">Home</a></li>
+                <li class="dropdown">
+                    <a href="services.html">Services</a>
+                    <div class="column">
+                        <!-- column content -->
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <a href="#jobs">Jobs</a>
+                    <div class="column">
+                        <!-- column content -->
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <a href="#companies">Companies</a>
+                    <div class="column">
+                        <!-- column content -->
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <a href="about.html">About us</a>
+                    <div class="column">
+                        <!-- column content -->
+                    </div>
+                </li>
+            </ul>
+            <div class="auth-buttons">
+                <!-- Login and Signup buttons -->
+                <button class="login" id="loginButton">Login</button>
+                <button class="signup" id="signupButton">Signup</button>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Anchor for home section -->
+        <a id="top"></a>
+        <section id="home" class="hero-section">
+            <h1>Empowering individuals with job opportunities.</h1>
+            <span class="sr-only">Contact Us</span> <!-- Screen reader only text for accessibility -->
+        </section>
+
+        <section>
+           <!---- <div class="image">
+                <img src="job image.jpg" alt="Image description">
+            </div>-->
+        </section>
+        
+        <section class="carousel">
+            <div class="carousel-item active">
+                <div class="content">
+                    <h2>Inclusive Work Environment</h2>
+                    <p>We advocate for inclusive work environments and help businesses create opportunities for disabled individuals to thrive in the workplace.</p>
+                    <a href="javascript:void(0)" class="read-more-btn">Read More</a>
+                </div>
+                <div class="image">
+                    <img src="path1.jpg" alt="Employee Advocacy">
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="content">
+                    <h2>Community Engagement</h2>
+                    <p>We actively engage with the community to promote awareness and understanding of the capabilities of disabled individuals in the workforce.</p>
+                    <a href="javascript:void(0)" class="read-more-btn">Read More</a>
+                </div>
+                <div class="image">
+                    <img src="path2.jpg" alt="Community Engagement">
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="content">
+                    <h2>Empowering Disabled Individuals</h2>
+                    <p>We provide job patrol services to help disabled individuals find meaningful employment and support them in their professional journey.</p>
+                    <a href="javascript:void(0)" class="read-more-btn">Read More</a>
+                </div>
+                <div class="image">
+                    <img src="path3.jpg" alt="Empowering Disabled Individuals">
+                </div>
+            </div>
+            <div class="carousel-controls">
+                <button class="prev-btn" onclick="prevSlide()">‹</button>
+                <button class="next-btn" onclick="nextSlide()">›</button>
+            </div>
+            <div class="carousel-indicators">
+                <span class="indicator active" onclick="currentSlide(0)"></span>
+                <span class="indicator" onclick="currentSlide(1)"></span>
+                <span class="indicator" onclick="currentSlide(2)"></span>
+            </div>
+        </section>
+
+        <section>
+            <div class="image">
+                <img src="image.jpg" alt="Image description">
+            </div>
+        </section>
+        <setion id="jobs">
+        <h1 style="text-align: center;margin-bottom: 30px;margin-top:30px">Latest Jobs</h1>
+        <div class="job-card">
+            <h2>Google Backend Developer</h2>
+            <p><strong>Location:</strong> Mountain View, CA</p>
+            <p><strong>Skills:</strong> Java, Python, Cloud Computing</p>
+            <p><strong>Experience:</strong> 3-5 years</p>
+            <p><strong>Salary:</strong> $120,000 - $150,000</p>
+            <button>Apply Now</button>
+        </div>
+
+        <div class="job-card">
+            <h2>Microsoft Full Stack Developer</h2>
+            <p><strong>Location:</strong> Redmond, WA</p>
+            <p><strong>Skills:</strong> JavaScript, React, Node.js</p>
+            <p><strong>Experience:</strong> 5-7 years</p>
+            <p><strong>Salary:</strong> $130,000 - $160,000</p>
+            <button>Apply Now</button>
+        </div>
+        
+        <div class="job-card">
+            <h2>Amazon Frontend Developer</h2>
+            <p><strong>Location:</strong> Seattle, WA</p>
+            <p><strong>Skills:</strong> HTML, CSS, JavaScript</p>
+            <p><strong>Experience:</strong> 3-5 years</p>
+            <p><strong>Salary:</strong> $110,000 - $140,000</p>
+            <button>Apply Now</button>
+        </div>
+
+        <div class="job-card">
+            <h2>Google Backend Developer</h2>
+            <p><strong>Location:</strong> Mountain View, CA</p>
+            <p><strong>Skills:</strong> Java, Python, Cloud Computing</p>
+            <p><strong>Experience:</strong> 3-5 years</p>
+            <p><strong>Salary:</strong> $120,000 - $150,000</p>
+            <button>Apply Now</button>
+        </div>
+
+        <div class="job-card">
+            <h2>Microsoft Full Stack Developer</h2>
+            <p><strong>Location:</strong> Redmond, WA</p>
+            <p><strong>Skills:</strong> JavaScript, React, Node.js</p>
+            <p><strong>Experience:</strong> 5-7 years</p>
+            <p><strong>Salary:</strong> $130,000 - $160,000</p>
+            <button>Apply Now</button>
+        </div>
+        
+        <div class="job-card">
+            <h2>Amazon Frontend Developer</h2>
+            <p><strong>Location:</strong> Seattle, WA</p>
+            <p><strong>Skills:</strong> HTML, CSS, JavaScript</p>
+            <p><strong>Experience:</strong> 3-5 years</p>
+            <p><strong>Salary:</strong> $110,000 - $140,000</p>
+            <button>Apply Now</button>
+        </div>
+
+
+        </div>
+    </section>
+    <body>
+        <setion id="companies">
+        <h1 style="text-align: center;margin-bottom: 30px;margin-top:30px">Companies Hiring</h1>
+
+        <div class="container1">
+            <div class="card">
+                <img src="fis.jpg" alt="FIS Logo">
+                <h2>FIS</h2>
+                <div class="reviews">
+                    <span class="star">&#9733;</span> 3.9 5K+ reviews
+                </div>
+                <p>FIS is hiring 3 to 10 yrs exp. in C++ & Mumps developer.</p>
+                <a href="#" class="view-jobs">View jobs</a>
+            </div>
+            <div class="card">
+                <img src="empower.jpg" alt="Empower Logo">
+                <h2>Empower</h2>
+                <div class="reviews">
+                    <span class="star">&#9733;</span> 3.7 235 reviews
+                </div>
+                <p>We're a financial services company.</p>
+                <a href="#" class="view-jobs">View jobs</a>
+            </div>
+            <div class="card">
+                <img src="standared chartered.jpg" alt="Standard Chartered Logo">
+                <h2>Standard Chartered</h2>
+                <div class="reviews">
+                    <span class="star">&#9733;</span> 3.9 4K+ reviews
+                </div>
+                <p>We strive to be a great place to work & bank.</p>
+                <a href="#" class="view-jobs">View jobs</a>
+            </div>
+            <div class="card">
+                <img src="tcs.jpg" alt="Tata Consultancy Services Logo">
+                <h2>Tata Consultancy Services</h2>
+                <div class="reviews">
+                    <span class="star">&#9733;</span> 3.8 76.9K+ reviews
+                </div>
+                <p>Explore challenging and exciting opportunities at TCS</p>
+                <a href="#" class="view-jobs">View jobs</a>
+            </div>
+            <div class="card">
+                <img src="cognizant.jpg" alt="cognizant">
+                <h2>cognizant</h2>
+                <div class="reviews">
+                    <span class="star">&#9733;</span> 3.8 76.9K+ reviews
+                </div>
+                <p>Leading ITeS company with global presence.</p>
+                <a href="#" class="view-jobs">View jobs</a>
+            </div>
+            <div class="container1">
+                <div class="card">
+                    <img src="icic.jpg" alt="ICICI logo">
+                    <h2>ICICI Bank</h2>
+                    <div class="reviews">
+                        <span class="star">&#9733;</span> 4.3 7K+ reviews
+                    </div>
+                    <p>Leading private sector bank in India.</p>
+                    <a href="#" class="view-jobs">View jobs</a>
+                </div>
+                <div class="card">
+                    <img src="airtel.jpg" alt="airtel Logo">
+                    <h2>Airtel</h2>
+                    <div class="reviews">
+                        <span class="star">&#9733;</span> 4.0 235 reviews
+                    </div>
+                    <p>Leading global telecom company.</p>
+                    <a href="#" class="view-jobs">View jobs</a>
+                </div>
+                <div class="card">
+                    <img src="amazon.jpg" alt="Standard Chartered Logo">
+                    <h2>Amazon</h2>
+                    <div class="reviews">
+                        <span class="star">&#9733;</span> 4.3 4K+ reviews
+                    </div>
+                    <p>World's largest Internet company.</p>
+                    <a href="#" class="view-jobs">View jobs</a>
+                </div>
+                <div class="card">
+                    <img src="jio.jpg" alt="jio Logo">
+                    <h2>Jio</h2>
+                    <div class="reviews">
+                        <span class="star">&#9733;</span> 3.8 76.9K+ reviews
+                    </div>
+                    <p>True 5G is here to unlock the limitless era.</p>
+                    <a href="#" class="view-jobs">View jobs</a>
+                </div>
+                <div class="card">
+                    <img src="capgemini.jpg" alt="capgemini Logo">
+                    <h2>Capgemini</h2>
+                    <div class="reviews">
+                        <span class="star">&#9733;</span> 3.9 76.9K+ reviews
+                    </div>
+                    <p>Global leader in technology services.</p>
+                    <a href="#" class="view-jobs">View jobs</a>
+                </div>
+            </setion>
+        </div>
+    </main>
+
+    <footer>
+        <div class="text-white text-center p-1 bg-theme" id="footer">
+            <div class="pb-1">
+                <a href="contact.html">Contact Us</a> | 
+                <a href="feedback.html">Feedback</a> | 
+                <a href="services.html">Terms</a> | 
+                <a href="jobs.html">Privacy & Policies</a>
+            </div>
+            All rights reserved Genesis Jobs - 2024
+        </div>	
+    </footer>
+
+   
+    <script src="scripts.js"></script>
+</body>
+</html>

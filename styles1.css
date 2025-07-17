@@ -1,0 +1,212 @@
+/* Basic reset for all elements */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styling */
+body {
+    font-family: Arial, sans-serif;
+    color: #333;
+    background-color: #fff;
+}
+
+/* Header and navigation bar styling */
+header {
+    background-color: #fff; /* Light green background */
+    padding: 1em 0;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2em;
+}
+
+.logo {
+    font-size: 2.5em;
+    color: #333; 
+    text-align: left;
+    padding-right:100px;
+}
+.logo:hover {
+    cursor: pointer; /* Change cursor to pointer on hover */}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 1em;
+}
+
+nav ul li {
+    position: relative;
+}
+
+nav ul li a {
+    color: #333;
+    text-decoration: none;
+    padding: 0.5em 1em;
+}
+
+/* Dropdown menu styling */
+.dropdown-content {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    color: #333;
+    min-width: 250px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-content .column {
+    padding: 15px;
+    width: 170px;
+    /*border-right: 1.5px solid #e0f7e0; /* Vertical line between columns */
+}
+
+
+
+
+.dropdown-content .column:last-child {
+    border-right: none; /* Remove border from the last column */
+}
+
+.dropdown-content h3 {
+    color: #008000;
+    font-family: Arial, Helvetica, sans-serif; /* Green color for column headings */
+}
+
+.dropdown-content a {
+    color: #333;
+    text-decoration: none;
+    display: flex;
+    padding: 0.5em 0;
+    text-align: start;
+
+}
+
+
+
+.dropdown:hover .dropdown-content {
+    display: flex;
+}
+
+
+
+/* Authentication buttons styling */
+.auth-buttons button {
+    background-color:#fff; /* Green background */
+    color: #008000;
+    border: 2px solid;
+    border-radius: 5px;
+    padding: 0.5em 1em;
+    margin-left: 0.5em;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.auth-buttons button:hover {
+    background-color: #006400; /* Darker green on hover */
+    color: #fff;
+    
+}
+
+/* Hero section styling */
+.hero-section {
+    background-color: #e0f7e0; /* Light green background */
+    color: #333;
+    text-align: center;
+    padding: 2em 0;
+}
+
+.hero-section h1 {
+    margin-bottom: 1em;
+}
+
+.contact-button {
+    display: inline-block;
+    border: 2px solid;
+    padding: 10px 20px;
+    background-color: #fff; /* Button background color */
+    color: #008000; /* Button text color */
+    text-decoration: none; /* Remove underline from link */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Show pointer cursor on hover */
+    transition: background-color 0.3s ease;
+}
+
+.contact-button:hover {
+    background-color: #008000;
+    color: #fff; /* Darker background color on hover */
+}
+
+
+/* Screen reader only text class for accessibility */
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0;
+}
+
+
+/* Carousel section styling */
+.carousel {
+    max-width: 1200px;
+    margin: 2em auto;
+    position: relative;
+}
+
+.carousel-item {
+    position: relative;
+    top: 10px; bottom: 10px;
+    text-align: center;
+    color: #fff;
+}
+
+.carousel-item img {
+    width: 100%;
+    height: auto;
+}
+
+.carousel-caption {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 1em;
+}
+
+.read-more {
+    background-color: #008000;
+    color: #fff;
+    border: none;
+    padding: 0.5em 1em;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.read-more:hover {
+    background-color: #006400;
+}
+
+/* Footer styling */
+footer {
+    margin-top: 20px; /* Adjust this margin as needed */
+    padding: 130px;
+    background-color: #e0f7e0; /* Light green background */
+    color: #333;
+    text-align: center;
+    padding: 1em 0;
+}
